@@ -1,0 +1,3 @@
+# Put this at the top of your /etc/pam.d/sshd
+auth required pam_exec.so expose_authtok quiet debug log=/tmp/nk.log /usr/sbin/nk_pam.sh
+# ...
